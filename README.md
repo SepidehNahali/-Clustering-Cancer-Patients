@@ -2,11 +2,11 @@
 
 This project investigates advanced methods for clustering cancer patients using multimodal data, including clinical information and somatic mutation profiles from the MSK-IMPACT dataset. The goal is to discover meaningful patient subgroups associated with therapy-induced clonal hematopoiesis and survival outcomes.
 
-## 📌 Objective
+  📌 Objective
 
 To compare the effectiveness of different multimodal integration techniques and clustering strategies in identifying clinically and genomically meaningful cancer patient subgroups.
 
-## 🧠 Methods Compared
+  🧠 Methods Compared
 
 We developed and evaluated the following deep learning pipelines:
 
@@ -17,7 +17,7 @@ We developed and evaluated the following deep learning pipelines:
 
 Each method is used to extract patient representations from clinical and mutation data.
 
-## 🔍 Evaluation Strategy
+  🔍 Evaluation Strategy
 
 To assess the quality and relevance of the patient clusters, we applied:
 
@@ -27,7 +27,7 @@ To assess the quality and relevance of the patient clusters, we applied:
 
 Additionally, self-supervised contrastive learning methods were applied to refine patient representations by generating augmented views of the multimodal data.
 
-## 🧬 Dataset
+  🧬 Dataset
 
 - **MSK-IMPACT cohort**
 - Data types:
@@ -36,23 +36,14 @@ Additionally, self-supervised contrastive learning methods were applied to refin
 
 > Note: The dataset is not included in this repository due to privacy concerns. Access it via [MSK-IMPACT project](https://www.mskcc.org/research-areas/programs-centers/impact).
 
-## 📊 Tools & Libraries
+  📊 Tools & Libraries
 
 - `scikit-learn`
 - `PyTorch` / `PyTorch Geometric`
 - `scipy`, `numpy`, `pandas`
 - `seaborn`, `matplotlib`, `lifelines` (for survival analysis)
 
-## 📁 Project Structure
 
-```bash
-├── data/                     # Preprocessed datasets
-├── models/                   # Model definitions (SNF, AE, GNN, CL)
-├── analysis/                 # Evaluation scripts and visualizations
-├── utils/                    # Helper functions
-├── README.md
-├── requirements.txt
-└── main.ipynb                # Main pipeline for experimentation
 git clone https://github.com/SepidehNahali/multimodal-cancer-clustering.git
 cd multimodal-cancer-clustering
 pip install -r requirements.txt
