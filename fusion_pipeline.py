@@ -1,0 +1,15 @@
+# After creating `X_fused_feature`
+from clustering.kmeans_baseline import run_kmeans_baseline
+from clustering.autoencoder_clustering import run_autoencoder_clustering
+from clustering.gnn_clustering import run_gnn_clustering
+from clustering.simclr_clustering import run_simclr_clustering
+from clustering.evaluate_clustering import evaluate_methods
+
+# Run clustering methods
+run_kmeans_baseline(X_fused_feature)
+run_autoencoder_clustering(X_fused_feature)
+run_gnn_clustering(X_fused_feature)
+run_simclr_clustering(X_fused_feature)
+
+# Optionally compare outputs
+evaluate_methods(X_fused_feature)
