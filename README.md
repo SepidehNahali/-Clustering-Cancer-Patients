@@ -53,3 +53,6 @@ Additionally, self-supervised contrastive learning methods were applied to refin
 ├── README.md
 ├── requirements.txt
 └── main.ipynb                # Main pipeline for experimentation
+git clone https://github.com/SepidehNahali/multimodal-cancer-clustering.git
+cd multimodal-cancer-clustering
+pip install -r requirements.txt
